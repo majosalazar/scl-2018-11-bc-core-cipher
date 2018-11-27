@@ -6,9 +6,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+    <!-- presentacion página -->
+    <section>
+      <h1>Mensaje Secreto</h1>
+      <h3>Instrucciones</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    </section>
+    <!-- area de traducción -->
+    <section>
+      <h4>Ingresa tu mensaje</h4>
+      <textarea name="" id="message" cols="30" rows="10"></textarea>
+      <input type="number" name="" id="key" min="1" max="100">
+      <input type="button" value="Codifica" onclick="btnEncode()">
+      <input type="button" value="Decodifica" onclick="btnDecode()">
+    </section>
+    <!-- resultados -->
+    <section>
+      <h3>Resultado</h3>
+      <p id="resultText"></p>
+      <input type="button" value="Ingresar nuevo mensaje" onclick="reload()">
+    </section>
+
+    <!-- esto estaba aqui de antes NO BORRAR -->
+    <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
