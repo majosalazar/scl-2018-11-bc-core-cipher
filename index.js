@@ -1,30 +1,24 @@
 let offset, string
 
-btnEncode = () => {
-  string = document.getElementById("message").value.toUpperCase();
+
+document.getElementById("btnEncode").onclick = () => {
+  string = document.getElementById("message").value;
   offset = document.getElementById("key").value;
-  console.log("hola " + string + " key " + offset); 
   let textEncode = window.cipher.encode(offset, string);
-  document.getElementById("resultText").innerHTML = textEncode.toLowerCase();
+  document.getElementById("resultText").innerHTML = textEncode;
+
+}
+ 
+document.getElementById("btnDecode").onclick = () => {
+  string = document.getElementById("message").value;
+  offset = document.getElementById("key").value;
+  let textDecode = window.cipher.decode(offset, string);
+  document.getElementById("resultText").innerHTML = textDecode;
 
 }
 
-function btnEncode() {
-  
+document.getElementById("reload").onclick = () => {
+  location.reload();
 }
 
-
-//btnEncode(message, key)
-
-let btnDecode = (mensaje, clave) => {
-  console.log("hola " + decodeMessage + " key " + decodeKey);
-
-}
-
-
-resultText.innerHTML = btnDecode(message, key);
-
-let reload = () => {
-
-}
 
