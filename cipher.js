@@ -9,7 +9,6 @@ window.cipher = {
       } else if (codeAscii >= 97 && codeAscii <= 122) {
         let textEncode = ((codeAscii - 97 + parseInt(offset)) % 26) + 97;
         resultEncode += String.fromCharCode(textEncode);
-        console.log(textEncode);
       } else if (codeAscii >= 48 && codeAscii <= 57) {
         let textEncode = ((codeAscii - 48 + parseInt(offset)) % 10) + 48;
         resultEncode += String.fromCharCode(textEncode);
