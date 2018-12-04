@@ -7,38 +7,6 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
 }
 
-header {
-  width: 100%;
-  background-color: cornflowerblue;
-  height: 70px;
-}
-
-.anchoNav {
-  width: 85%;
-  height: 70px;
-  margin: auto;
-}
-
-.logo {
-  width: 30%
-  height: 70px;
-  float: left;
-  padding-top: 10px;
-  border-sizing: border-box;
-}
-
-.logo p a {
-  color: aliceblue;
-  font-size: 40px;
-
-}
-
-nav {
-  width: 70%;
-  height: 70px;
-  float: left;
-}
-
-nav ul li {
-  display: inline;
+.principal {
+  text-align: center;
 }

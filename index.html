@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="anchoNav">
-        <div id="logo">
-          <p><a href="#">Mensaje Secreto</a></p>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">¿Como funciona?</a></li>
-            <li><a href="#">¿Porque lo hacemos?</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- presentacion página -->
-    <section>
-      <h1>Mensaje Secreto</h1>
-      <h3>Instrucciones</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-    </section>
-    <!-- area de traducción -->
-    <section>
-      <h4>Ingresa tu mensaje</h4>
-      <textarea name="" id="message" cols="30" rows="10"></textarea>
-      <input type="number" name="" id="key" min="1" max="100">
-      <input type="button" value="Codifica" id="btnEncode">
-      <input type="button" value="Decodifica" id="btnDecode">
-    </section>
-    <!-- resultados -->
-    <section id="viewResult">
-      <h3>Resultado</h3>
-      <p id="resultText"></p>
-      <input type="button" value="Copiar" id="copyText">
-      <input type="button" value="Limpiar" id="clear">
-    </section>
 
-    <!-- esto estaba aqui de antes NO BORRAR -->
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Safe Message</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        SAFE MESSAGE
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">¿Cómo funciona?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Instrucciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+
+
+  
+  <!-- presentacion página -->
+  <div class="container-fluid principal">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <!-- area de traducción -->
+        <section>
+          <h4>Ingresa tu mensaje</h4>
+          <textarea name="" id="message" cols="30" rows="10"></textarea>
+          <h6>Clave numérica</h6>
+          <input type="number" name="" id="key" min="1" max="100">
+          <input type="button" value="Codifica" id="btnEncode">
+          <input type="button" value="Decodifica" id="btnDecode">
+        </section>
+        <!-- resultados -->
+        <section id="viewResult">
+          <h3>Resultado</h3>
+          <p id="resultText"></p>
+          <input type="button" value="Copiar" id="copyText">
+          <input type="button" value="Limpiar" id="clear">
+        </section>
+        
+      </div>
+      <div class="col-2"></div>
+
+    </div>
+  </div>
+
+  <!-- enlaces bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- enlaces locales -->
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
