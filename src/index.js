@@ -15,8 +15,26 @@ window.onload = () => {
     document.getElementById("resultText").innerHTML = textDecode;
   }
   
-  document.getElementById("reload").onclick = () => {
-    location.reload();
+
+  //boton para copiar el mensaje de resultado
+  document.getElementById("copyText").onclick = () => {
+    let selectMessage = document.getElementById("resultText");
+    let range = document.createRange();
+    let select = window.getSelection();
+
+    select.removeAllRanges();
+    range.selectNodeContents(selectMessage);
+    select.addRange(range);
+    document.execCommand("copy"); 
+
+  }
+ 
+  //boton limpiar pagina
+  document.getElementById("clear").onclick = () => {
+    document.getElementById("message").value = "";
+    document.getElementById("key").value = "";
+    document.getElementById("resultText").innerHTML = "";
+    //location.reload();
   }
 
 }
