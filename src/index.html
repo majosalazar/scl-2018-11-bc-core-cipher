@@ -11,24 +11,26 @@
 </head>
 
 <body>
+  <!-- navbar -->
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+          alt="">
         SAFE MESSAGE
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">¿Cómo funciona?</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter2">¿Cómo funciona?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Instrucciones</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Instrucciones</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contacto</a>
@@ -36,12 +38,12 @@
         </ul>
       </div>
     </nav>
-
   </div>
 
 
 
-  
+
+
   <!-- presentacion página -->
   <div class="container-fluid principal">
     <div class="row">
@@ -52,7 +54,9 @@
           <h4>Ingresa tu mensaje</h4>
           <textarea name="" id="message" cols="30" rows="10"></textarea>
           <h6>Clave numérica</h6>
-          <input type="number" name="" id="key" min="1" max="100">
+          <span>
+            <input type="number" name="" id="key" min="1" max="100">
+          </span>
           <input type="button" value="Codifica" id="btnEncode">
           <input type="button" value="Decodifica" id="btnDecode">
         </section>
@@ -63,24 +67,94 @@
           <input type="button" value="Copiar" id="copyText">
           <input type="button" value="Limpiar" id="clear">
         </section>
-        
+
       </div>
       <div class="col-2"></div>
-
     </div>
   </div>
 
-  <!-- enlaces bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  <!-- modal ¿cómo funciona? -->
+  <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">¿Cómo funciona?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          SafeMessage te permite cifrar tus mensajes, ya sea que estos contengan información sensible, datos personales
+          o conversaciones íntimas, te ayudamos a mantener la confidencialidad de tus mensajes para que al momento de
+          compartirlos estos sean recepcionados y entendidos solo porque quien tu quieras .
 
-  <!-- enlaces locales -->
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
+          El funcionamiento de SafeMessage es el siguiente
+
+
+          Es importante que sepas que SafeMessage funciona en base a una clave numérica, un número entero y positivo
+          que nos permite cifrar y descifrar tus mensajes.
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal instrucciones -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Instrucciones</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>¡Hola! a continuación se describen los pasos a seguir para el uso de SafeMessage.</h5>
+          <br>
+          1. Lo primero que debes hacer es ingresar tu mensaje en la caja de texto, ya sea que vayas a cifrar o
+          descifrar un mensaje.
+          <br>
+          2. Luego debes ingresar la clave numérica en la casilla indicada, tu clave debe ser un número entero,
+          positivo y diferente de cero. Si eres quien inicia la cadena de mensajes, debes escoger la clave numérica y
+          posteriormente compartirla con el receptor de tu mensaje. En cambio si vas a descifrar un mensaje debes
+          ingresar la clave numérica que se te compartió junto con el mensaje cifrado.
+          <br>
+          3. ¡Llegó el momento de la acción! ahora debes presionar el botón que indica la acción que quiera realizar
+          y esperar por tu mensaje.
+          <br>
+          4. Al momento de visualizarse tu mensaje aparecen abajo de este 2 nuevos botones copiar y limpiar, los
+          cuales buscan simplificar tu experiencia al momento de tener que copiar el mensaje que te entrega
+          SafeMessage para ser compartido y limpiar los resultados anteriores en caso de que necesites ingresar
+          nuevos mensajes.
+          <br>
+          5. Disfrutar de la seguridad que te brinda SafeMessage.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- enlaces bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+    <!-- enlaces locales -->
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
