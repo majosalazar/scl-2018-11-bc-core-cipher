@@ -1,17 +1,17 @@
 window.onload = () => {
-  let offset, string
+  let offset, message
   
   document.getElementById("btnEncode").onclick = () => {
-    string = document.getElementById("message").value;
+    message = document.getElementById("message").value;
     offset = document.getElementById("key").value;
-    let textEncode = cipher.encode(offset, string);
+    let textEncode = cipher.encode(offset, message);
     document.getElementById("resultText").innerHTML = textEncode;
   }
    
   document.getElementById("btnDecode").onclick = () => {
-    string = document.getElementById("message").value;
+    message = document.getElementById("message").value;
     offset = document.getElementById("key").value;
-    let textDecode = cipher.decode(offset, string);
+    let textDecode = cipher.decode(offset, message);
     document.getElementById("resultText").innerHTML = textDecode;
   }
   
