@@ -6,7 +6,8 @@
   <title>Safe Message</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/logo-safeMessage.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -15,9 +16,8 @@
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
-          alt="">
-        SAFE MESSAGE
+        <img src="img/logo-safeMessage.png" class="d-inline-block align-top"
+          alt="logo SafeMessage">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,15 +57,15 @@
           <span>
             <input type="number" name="" id="key" min="1" max="100">
           </span>
-          <input type="button" value="Codifica" id="btnEncode">
-          <input type="button" value="Decodifica" id="btnDecode">
+          <input type="button" class="btn color-principal" value="Codifica" id="btnEncode">
+          <input type="button" class="btn" value="Decodifica" id="btnDecode">
         </section>
         <!-- resultados -->
         <section id="viewResult">
           <h3>Resultado</h3>
           <p id="resultText"></p>
-          <input type="button" value="Copiar" id="copyText">
-          <input type="button" value="Limpiar" id="clear">
+          <input type="button" class="btn" value="Copiar" id="copyText">
+          <input type="button" class="btn" value="Limpiar" id="clear">
         </section>
 
       </div>
@@ -87,7 +87,7 @@
         <div class="modal-body">
           SafeMessage te permite cifrar tus mensajes, ya sea que estos contengan información sensible, datos personales
           o conversaciones íntimas, te ayudamos a mantener la confidencialidad de tus mensajes para que al momento de
-          compartirlos estos sean recepcionados y entendidos solo porque quien tu quieras .
+          compartirlos estos sean recepcionados y entendidos solo por quien tu quieras .
 
           El funcionamiento de SafeMessage es el siguiente
 
@@ -120,6 +120,7 @@
           <br>
           1. Lo primero que debes hacer es ingresar tu mensaje en la caja de texto, ya sea que vayas a cifrar o
           descifrar un mensaje.
+          <br>
           <br>
           2. Luego debes ingresar la clave numérica en la casilla indicada, tu clave debe ser un número entero,
           positivo y diferente de cero. Si eres quien inicia la cadena de mensajes, debes escoger la clave numérica y
