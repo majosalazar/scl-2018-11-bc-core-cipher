@@ -40,5 +40,17 @@ body {
   background-color: #F4F7F9;
   height: 170px;
   width: 80%;
-  
+}
+
+h4 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.box-number {
+  margin-top: 20px;
 }
