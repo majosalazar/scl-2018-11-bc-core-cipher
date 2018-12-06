@@ -9,8 +9,18 @@ body {
 
 .principal {
   text-align: center;
+  /*
+  background-image: url(/src/img/background.png);
+  background-size: 100%; 
+  */
 }
 
 .color-principal {
   background-color: #3F38C4;
+  color: white;
+}
+
+.color-secundario {
+  background-color: #FCB935;
+  color: white;
 }
