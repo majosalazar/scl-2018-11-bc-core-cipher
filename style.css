@@ -7,7 +7,7 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
 }
 
-.principal {
+.centrar {
   text-align: center;
   /*
   background-image: url(/src/img/background.png);
@@ -21,6 +21,24 @@ body {
 }
 
 .color-secundario {
-  background-color: #FCB935;
+  background-color: #F9C04D;
   color: white;
+}
+
+.color-terciario {
+  background-color: #F4F7F9;
+}
+
+.text-box {
+  border-radius: 10px;
+  height: 170px;
+  width: 80%;
+}
+
+.text-box-resultado {
+  border-radius: 10px;
+  background-color: #F4F7F9;
+  height: 170px;
+  width: 80%;
+  
 }
