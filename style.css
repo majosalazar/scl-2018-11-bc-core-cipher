@@ -9,10 +9,6 @@ body {
 
 .centrar {
   text-align: center;
-  /*
-  background-image: url(/src/img/background.png);
-  background-size: 100%; 
-  */
 }
 
 .color-principal {
@@ -42,11 +38,13 @@ body {
   background-color: #F4F7F9;
   height: 170px;
   width: 80%;
+  overflow: auto;
 }
 
 h4 {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  font-size: 1.7em;
 }
 
 .inline {
@@ -54,13 +52,33 @@ h4 {
 }
 
 .box-number {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .input-number {
   border-style: none;
   border-radius: 10px;
   background-color: #F4F7F9;
-  width: 50px;
+  width: 70px;
   
 }
+
+.main {
+  background-image: url(img/background2-80.png);
+  background-attachment: fixed;
+  background-repeat: repeat;  
+}
+
+.color-letra {
+  color: white;
+  font-variant: inherit;
+  font-weight: bold;
+}
+
+.btn {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 30px;
+  margin-bottom: 85px;
+}
+
