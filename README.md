@@ -1,13 +1,20 @@
 # SafeMessage
 
-![Logo SafeMessage](src/img/logo-safeMessage1.png)
+![Logo SafeMessage](src/img/logo-safeMessage1.png) ![Animación App](src/img/Animated&#32;GIF-source.gif)
 
+<p align="center>
+<img src="src/img/logo-safeMessage1.png">
+</p>
 
 ### Definición del Producto
 
 ¿Sabes cuántos mensajes se envían solo por Whatsapp en un minuto alrededor del mundo? 38 millones de mensajes, si leiste bien y en tan solo un minuto. Ahora piensa en la cantidad de mensajes que envías dia a dia por múltiples plataformas digitales, muchos de estos mensajes contienen información sensible y en algunos casos privada, no es muy difícil sentirse vulnerable al enviar esta información por la red esperando que si alguien más logra tener acceso a ella no la use de mala manera.
 
 Es por esto que desarrollamos SafeMessage es una aplicación web que permite resguardar tus mensajes por medio de un cifrado en base a una clave numérica, de esta manera la información que envias de manera cifrada sólo podrá ser descifrada solo por quien tu deseas a través de una clave numérica. 
+
+<p align="center>
+<img src="src/img/Animated GIF-source.gif">
+</p>
 
 #### ¿Como funciona? 
 ![Animación App](src/img/Animated&#32;GIF-source.gif)
