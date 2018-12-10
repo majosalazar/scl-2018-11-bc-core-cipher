@@ -36,13 +36,16 @@ Los chilenos pasamos alrededor de 5 horas dias usando el celular, gran parte de 
 
 ##### Flujo de la aplicación
 
-La aplicación se desarrolló bajo un flujo de trabajo simple, que evita pasos intermedios innecesarios y complejos entre las diversas tareas.  
+La aplicación se desarrolló bajo un flujo de trabajo simple, que evita pasos intermedios innecesarios que puedan complejizar el en entendimiento del usuario al momento de ejecutar las diversas acciones.
 
 <p align="center">
-<img src="src/img/Support Process.png">
+<img src="src/img/flujo.png">
 </p>
 
+###### Prototipo de baja calidad
 
+![prototipo de baja](src/img/baja1.png)
+![prototipo de baja](src/img/baja2.png)
 
 
 
