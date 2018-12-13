@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Safe Message</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
@@ -17,7 +17,7 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light color-terciario">
     <a class="navbar-brand" href="#">
-      <img src="img/logo-safeMessage1.png" class="d-inline-block align-top" height="45px" alt="logo SafeMessage">
+      <img src="img/logo-safeMessage1.png" class="d-inline-block align-top logo" alt="logo SafeMessage">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,30 +37,30 @@
   </nav>
 
   <!-- página -->
-  <div class="container-fluid centrar main">
+  <main class="container-fluid centrar main">
     <div class="row">
       <!-- area de traducción -->
-      <div class="col-sm-6">
+      <section class="col-sm-6">
         <h4 class="color-letra">Ingresa tu mensaje</h4>
         <textarea class="text-box" id="message"></textarea>
         <div class="box-number">
           <h6 class="inline color-letra">Clave:</h6>
-          <input type="number" name="" id="key" class="inline input-number">
+          <input type="number" id="key" class="inline input-number">
         </div>
         <br>
         <button class="btn color-principal btn-lg" id="btnEncode"><i class="fas fa-lock"></i></button>
         <button class="btn color-secundario btn-lg" id="btnDecode"><i class="fas fa-lock-open"></i></button>
-      </div>
+      </section>
 
       <!-- resultados -->
-      <div class="col-sm-6">
+      <section class="col-sm-6">
         <h4 class="color-letra">Resultado</h4>
         <div id="resultText" class="container-fluid text-box-resultado"></div>
         <button class="btn btn-lg color-terciario" id="copyText"><i class="far fa-copy"></i></button>
         <button class="btn btn-lg color-terciario" id="clear"><i class="fas fa-sync"></i></button>
-      </div>
+      </section>
     </div>
-  </div>
+  </main>
 
   <!-- modal ¿cómo funciona? -->
   <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -93,7 +93,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Instrucciones</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle2">Instrucciones</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -119,18 +119,19 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- enlaces bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
+  <!-- enlaces bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-    <!-- enlaces locales -->
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+  <!-- enlaces locales -->
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

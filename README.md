@@ -42,15 +42,40 @@ La aplicación se desarrolló bajo un flujo de trabajo simple, que evita pasos i
 <img src="src/img/flujo.png">
 </p>
 
-###### Prototipo de baja calidad
+##### Prototipo de baja calidad
 
-![prototipo de baja](src/img/baja1.png)
-![prototipo de baja](src/img/baja2.png)
+El primer maquetado de la aplicación consideraba una distribución vertical de los componentes, lo que generaba el desperdicio de una gran porción del ancho de la pantalla.
+
+<p align="center">
+<img src="src/img/baja1.png" width="400px">
+</p>
+
+En la segunda versión del maquetado se implementó una distribución que aprovecha de mejor manera el ancho de la pantalla, evitando que en el uso en pc de la aplicación el usuario tuviese que hacer scroll para ver el resultado, también se cambió el texto en los botones por iconos.
+
+<p align="center">
+<img src="src/img/baja2.png" width="400px">
+</p>
 
 
+Finalmente la 1ra versión funcional de se ve esta forma, se desarrolló la marca SafeMessage como respuesta a la problemática que se determinó anteriormente, se definió la paleta de colores de la marca, el diseño del logo y el uso de botones con iconos. 
+ 
+
+<p align="center">
+<img src="src/img/Mesa de trabajo 1.png" width="800px">
+</p>
 
 
+#### Resultados del testeo
 
 
+La aplicación fue testeada por 4 usuarios, de los cuales 3 pudieron hacer uso de esta de manera fluida. Los principales comentarios recibidos fueron:
+
+- Los botones de “¿cómo funciona?” e “instrucciones” no se resaltan lo suficiente.
+- El color de los botones de los candados se confunde con el fondo.
+- Los iconos en los botones se dan a entender, pero sería bueno incluir un globo con información de para qué sirven.
+- La ubicación de los botones de candado sería más cómoda si estuvieran en el medio, como el traductor de google.
 
 
+#### Elementos a Iterar
+
+En base al feedback recibido sobre la aplicación vamos a iterar sobre una mejor visualización de los elementos modificando el color de fondo, el tamaño y el color de los botones, también se agregaran “tooltips” a estos últimos a fin de entregar a los usuarios información sobre la función de cada uno. Finalmente trabajaremos sobre una nueva disposición de los elementos, a fin de permitir un flujo de uso más fluido.
